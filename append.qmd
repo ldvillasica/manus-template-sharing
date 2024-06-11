@@ -1,0 +1,9 @@
+## Raw data from soil profiling
+
+| Col1 | Col2 | Col3 |
+|------|------|------|
+|      |      |      |
+|      |      |      |
+|      |      |      |
+
+: This is a sample appendix table {#tbl-appendix}

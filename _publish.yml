@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: e3538cfb-079e-4a5c-9ac1-159181c14b76
+      url: 'https://ldvillasica.quarto.pub/manuscript-demo'

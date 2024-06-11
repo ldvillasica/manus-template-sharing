@@ -1,0 +1,9 @@
+# Methods
+
+|     |     |     |
+|-----|-----|-----|
+|     |     |     |
+|     |     |     |
+|     |     |     |
+
+: This is a sample table {#tbl-sample}

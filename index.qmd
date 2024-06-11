@@ -1,0 +1,21 @@
+---
+keywords: add, your, keywords, here, separate, each, word, with, comma
+affiliation: Caraga State University, College of Agriculture and Agri-Industries
+---
+
+::: callout-note
+## Attribution
+
+An Undergraduate Manuscript Submitted to the\
+College of Agriculture and Agri-Industries\
+Caraga State University\
+Ampayon Butuan City\
+In Partial fulfillment of the Requirement for the Degree of\
+Bachelor of Science in Agriculture\
+Major in Soil Science\
+Department of Plant and Soil Sciences
+:::
+
+# Abstract {.unnumbered}
+
+Write your abstract here in no more than 250 words. Go back at the first lines and write at least 5 keywords separated with commas.

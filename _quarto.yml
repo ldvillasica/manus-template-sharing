@@ -1,0 +1,35 @@
+project:
+  type: book
+
+book:
+  title: "Manuscript Template - Change this when you get this"
+  author: "Put your name here too"
+  date: "6/11/2024"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - rrr.qmd
+    - methods.qmd
+    - rnd.qmd
+    - conclusion.qmd
+    - summary.qmd
+    - recom.qmd
+    - ackgmt.qmd
+    - references.qmd
+  appendices: 
+    - append.qmd
+crossref:
+  appendix-title: "Appendix"
+  appendix-delim: ":"
+
+bibliography: references.bib
+
+comments:
+  hypothesis: true
+
+format:
+  html:
+    theme: cosmo
+
+editor: visual
+
