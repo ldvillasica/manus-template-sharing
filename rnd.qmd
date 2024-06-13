@@ -2,4 +2,4 @@
 
 see @tbl-sample
 
-see in @tbl-appendix
+see in

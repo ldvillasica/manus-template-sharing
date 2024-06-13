@@ -1,9 +1,53 @@
 # Methods
 
-|     |     |     |
-|-----|-----|-----|
-|     |     |     |
-|     |     |     |
-|     |     |     |
+## Procedure 1
+
+See Experimental design in @fig-design
+
+## Experimental Design
+
+```{r}
+#| label: fig-design
+#| fig-cap: "RCBD layout for an exeperiment with 4 treatments replicated 3 times"
+
+
+#install pacman
+pacman::p_load(tidyverse, # data handling
+               agricolae, # experimental design
+               desplot)   # plots
+
+# 4 soil treatments
+TrtSoil   <- paste0("S", 1:4)    # S1 - S4
+n_TrtSoil <- n_distinct(TrtSoil) # 4
+
+# number of replicates
+n_Reps    <- 3
+
+# RCBD plots
+rcbd_out <- design.rcbd(trt = TrtSoil,
+                        r = n_Reps,
+                        seed = 42)
+
+# Add Row and Col 
+rcbd_out$bookRowCol <- rcbd_out$book %>% 
+  mutate(Row = block %>% as.integer) %>% 
+  group_by(Row) %>% 
+  mutate(Col = 1:n()) %>% 
+  ungroup()
+
+# Plot field layout
+desplot(TrtSoil ~ Row + Col, flip = TRUE,
+        text = TrtSoil, cex = 1, shorten = "no",
+        out1 = block,
+        data = rcbd_out$bookRowCol,
+        main = NULL, 
+        show.key = T, key.cex = 0.5)
+```
+
+|        |      |      |
+|--------|------|------|
+| Sample | Test | Test |
+|        |      |      |
+|        |      |      |
 
 : This is a sample table {#tbl-sample}

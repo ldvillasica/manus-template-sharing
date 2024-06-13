@@ -2,9 +2,27 @@ project:
   type: book
 
 book:
-  title: "Manuscript Template - Change this when you get this"
-  author: "Put your name here too"
-  date: "6/11/2024"
+  title: |
+    Manuscript Template - Change Title when you get this *Scientific name*
+  author:
+    - name: Student Name A
+    - name: Student Name B
+  subtitle: |
+    An Undergraduate Manuscript Submitted to the\
+    College of Agriculture and Agri-Industries\
+    Caraga State University\
+    Ampayon Butuan City\
+    In Partial Fulfillment of the Requirement for the Degree of\
+    Bachelor of Science in Agriculture\
+    Major in\
+    Soil Science\
+    Department of Plant and Soil Sciences\
+  page-footer:
+    left: |                         
+      We grow food. We sustain lives.
+  favicon: caa.png
+  date: "June 2024"
+  date-format: MMMM YYYY
   chapters:
     - index.qmd
     - intro.qmd
@@ -23,13 +41,23 @@ crossref:
   appendix-delim: ":"
 
 bibliography: references.bib
-
-comments:
-  hypothesis: true
+csl: apa.csl
 
 format:
   html:
     theme: cosmo
+    comments:
+      hypothesis: true
+  pdf:
+    include-in-header: 
+      text: |
+        \usepackage{pdflscape}
+        \newcommand{\blandscape}{\begin{landscape}}
+        \newcommand{\elandscape}{\end{landscape}}
+      
+execute:
+  freeze: auto  # re-render only when source changes
+  echo: false
 
 editor: visual
 

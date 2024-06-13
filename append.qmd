@@ -1,9 +1,31 @@
-## Raw data from soil profiling
+## Additional Resources
 
-| Col1 | Col2 | Col3 |
-|------|------|------|
-|      |      |      |
-|      |      |      |
-|      |      |      |
+## Raw Data
 
-: This is a sample appendix table {#tbl-appendix}
+test raw
+
+{{< pagebreak >}}
+
+`\blandscape`{=latex}
+
+## Work Plan
+
+```{mermaid}
+%%| label: fig-workplan
+%%| fig-cap: "Work plan for the implementation of the research"
+
+gantt
+    title A Gantt Diagram
+    dateFormat MMMM
+    axisFormat %b-%Y
+    section Objective 1
+        Proposal writing          :June, 30d
+        Site Ocular visit         :July, 15d
+    section Objective 2
+        Task in Another :August, 12d
+        another task    :September, 24d
+    section Objective 3
+        Conduct of experiment :December, 30d
+```
+
+`\elandscape`{=latex}

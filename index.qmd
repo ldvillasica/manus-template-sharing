@@ -1,21 +1,19 @@
----
-keywords: add, your, keywords, here, separate, each, word, with, comma
-affiliation: Caraga State University, College of Agriculture and Agri-Industries
----
+## Abstract {.unnumbered}
 
 ::: callout-note
-## Attribution
+## Author
 
-An Undergraduate Manuscript Submitted to the\
-College of Agriculture and Agri-Industries\
-Caraga State University\
-Ampayon Butuan City\
-In Partial fulfillment of the Requirement for the Degree of\
-Bachelor of Science in Agriculture\
-Major in Soil Science\
-Department of Plant and Soil Sciences
+[Your name here]{.smallcaps}
 :::
 
-# Abstract {.unnumbered}
+Write your abstract here in no more than 250 words. You can also add style like this $x^2$.
 
-Write your abstract here in no more than 250 words. Go back at the first lines and write at least 5 keywords separated with commas.
+*Keyword*: Write, at least, five, words, with comma.
+
+::: callout-note
+## Research Committee Members
+
+[Adviser\
+Name of Panel Member A\
+Name of Panel Member B]{.smallcaps}
+:::

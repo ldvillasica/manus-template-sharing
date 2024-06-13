@@ -1,1 +1,9 @@
 # Introduction
+
+## Objectives of the Study
+
+```{r}
+y<-5
+x<-6
+x+y
+```
