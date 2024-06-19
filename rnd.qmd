@@ -2,4 +2,54 @@
 
 see @tbl-sample
 
-see in
+## This is a discussion part
+
+Anova discussion is shown in @tbl-anova
+
+{{< pagebreak >}}
+
+\blandscape
+
+```{r}
+#| label: tbl-anova
+#| tbl-cap: "Analysis of Variance for the effect of difference biochar at different rates"
+#| message: false
+
+library(knitr)
+library(rstatix)
+library(agricolae)
+
+
+data <-read.csv("GERALD.csv")
+data$BIOCHAR <- as.factor(data$BIOCHAR)
+data$RATE <- as.factor(data$RATE)
+
+
+model<-anova_test(TOC~BIOCHAR+RATE, data=data)
+tabaov<- get_anova_table(model)
+
+posthoc <- tukey_hsd(data,TOC~BIOCHAR+RATE)
+
+kable(tabaov, format = "pandoc", digits = 3)
+kable(posthoc, format = "pandoc", digits = 3)
+```
+
+\elandscape
+
+## Another results to discuss
+
+```{r}
+#| label: fig-anovaplot
+#| fig-cap: "This a plot with letters on top of it"
+#| message: false
+library(agricolae)
+
+data <-read.csv("GERALD.csv")
+data$BIOCHAR <- as.factor(data$BIOCHAR)
+data$RATE <- as.factor(data$RATE)
+
+plot <- aov(TOC~REPLICATION*BIOCHAR+RATE, data = data)
+hoc <- HSD.test(plot,"BIOCHAR")
+
+bar <- bar.group(hoc$groups, ylim=c(0,65))
+```

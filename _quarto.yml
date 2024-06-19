@@ -4,6 +4,7 @@ project:
 book:
   title: |
     Manuscript Template - Change Title when you get this *Scientific name*
+  output-file: "Draft-1"
   author:
     - name: Student Name A
     - name: Student Name B
@@ -23,6 +24,7 @@ book:
   favicon: caa.png
   date: "June 2024"
   date-format: MMMM YYYY
+  submitted: "May 25, 2024"
   chapters:
     - index.qmd
     - intro.qmd
@@ -45,15 +47,18 @@ csl: apa.csl
 
 format:
   html:
+    standalone: true
     theme: cosmo
     comments:
       hypothesis: true
   pdf:
+    toc: true
+    papersize: letter
     include-in-header: 
       text: |
-        \usepackage{pdflscape}
-        \newcommand{\blandscape}{\begin{landscape}}
-        \newcommand{\elandscape}{\end{landscape}}
+       \usepackage{pdflscape}
+       \newcommand{\blandscape}{\begin{landscape}}
+       \newcommand{\elandscape}{\end{landscape}}
       
 execute:
   freeze: auto  # re-render only when source changes

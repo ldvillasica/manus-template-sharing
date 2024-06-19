@@ -22,10 +22,11 @@ gantt
         Proposal writing          :June, 30d
         Site Ocular visit         :July, 15d
     section Objective 2
-        Task in Another :August, 12d
-        another task    :September, 24d
+        Soil sampling :August, 12d
+        Land Prep and Experimental layouting    :September, 30d
     section Objective 3
-        Conduct of experiment :December, 30d
+        Data gathering and maintenance :October, 90d
+        Manuscript preparation  :December, 30d
 ```
 
 `\elandscape`{=latex}

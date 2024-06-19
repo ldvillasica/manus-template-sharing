@@ -6,7 +6,7 @@
 [Your name here]{.smallcaps}
 :::
 
-Write your abstract here in no more than 250 words. You can also add style like this $x^2$.
+Write your abstract here in no more than 250 words. You can also add style like this x^2^ and x~2~ using markdown syntax.
 
 *Keyword*: Write, at least, five, words, with comma.
 
